@@ -1,5 +1,17 @@
 ### Hi there 👋
 
+### TODO
+1. Quakus
+2. GraphQL
+3. Hasura
+4. DynamoDB
+5. MongoDB
+6. REST API
+
+### My problems
+1. JWT
+2. Transactions
+
 <!--
 **Iskamele/iskamele** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
