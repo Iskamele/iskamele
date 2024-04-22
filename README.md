@@ -13,6 +13,13 @@
 1. JWT
 2. Transactions
 
+### To try
+1. https://quarkus.io/guides/getting-started#development-mode
+
+### To read
+1. https://quarkus.io/guides/cdi
+2. https://quarkus.io/guides/cdi-reference
+
 <!--
 **Iskamele/iskamele** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
