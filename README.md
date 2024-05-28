@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+<!--
 ### In progress
 1. Transactions
 2. Docker
@@ -28,7 +28,7 @@
 6. https://www.atlassian.com/ru/git/tutorials/saving-changes/git-stash
 7. https://www.jetbrains.com/help/idea/2024.1/undo-changes.html#revert-last-commit
 8. https://www.toptal.com/java/a-guide-to-everyday-mockito
-
+-->
 <!--
 **Iskamele/iskamele** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
