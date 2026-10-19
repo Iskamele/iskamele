@@ -60,9 +60,9 @@ def plural(n: int, one: str, few: str, many: str) -> str:
 
 
 def render_card(t: Translation) -> str:
-    status = "Переклад " + pct(t.lines_done, t.lines_total)
+    status = "Переклад " + pct(min(t.lines_done, t.lines_total), t.lines_total)
     if t.edited is not None:
-        status += " · редактура " + pct(t.edited, t.lines_total)
+        status += " · редактура " + pct(min(t.edited, t.lines_total), t.lines_total)
     status += " · версія " + t.version if t.version else " · у роботі"
 
     if t.lines_done >= t.lines_total:
@@ -124,11 +124,13 @@ def parse_manifest(data: object) -> dict:
 
 def fetch_json(url: str, token: str | None = None) -> object | None:
     """GET a JSON document; None on 404. The token only ever goes to the GitHub API."""
-    headers = {"User-Agent": "iskamele-profile", "Accept": "application/json"}
+    request = urllib.request.Request(url, headers={"User-Agent": "iskamele-profile",
+                                                   "Accept": "application/json"})
     if token and url.startswith(GITHUB_API):
-        headers["Authorization"] = "Bearer " + token
+        # unredirected: urllib copies ordinary headers to wherever a redirect points
+        request.add_unredirected_header("Authorization", "Bearer " + token)
     try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as r:
+        with urllib.request.urlopen(request, timeout=30) as r:
             return json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         if e.code == 404:

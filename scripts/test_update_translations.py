@@ -86,6 +86,10 @@ class CardTest(unittest.TestCase):
     def test_done_over_total_counts_as_finished(self):
         self.assertNotIn(" із ", render_card(card(lines_done=710, lines_total=703)))
 
+    def test_percentages_stop_at_100(self):
+        text = render_card(card(lines_done=800, lines_total=703, edited=900))
+        self.assertIn("Переклад 100% · редактура 100%", text)
+
     def test_markup_in_names_is_escaped(self):
         text = render_card(card(game='Tom & "Jerry"'))
         self.assertIn('alt="Tom &amp; &quot;Jerry&quot;"', text)
@@ -173,6 +177,15 @@ class FetchTest(unittest.TestCase):
 
     def test_token_goes_to_the_github_api(self):
         self.assertEqual(self.headers_sent(SEARCH)["authorization"], "Bearer secret")
+
+    def test_token_is_not_carried_over_a_redirect(self):
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b"{}"
+        with mock.patch.object(update_translations.urllib.request, "urlopen", return_value=response) as urlopen:
+            fetch_json(SEARCH, token="secret")
+        request = urlopen.call_args[0][0]
+        self.assertNotIn("Authorization", request.headers)  # redirects copy only these
+        self.assertEqual(request.unredirected_hdrs["Authorization"], "Bearer secret")
 
     def test_token_never_leaves_the_github_api(self):
         self.assertNotIn("authorization", self.headers_sent(STEAM_HEADER))
