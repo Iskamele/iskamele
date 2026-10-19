@@ -1,51 +1,72 @@
-<div align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
-  <img src="https://img.shields.io/badge/Quarkus-4695EB?style=for-the-badge&logo=quarkus&logoColor=white" />
-  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
-</div>
+# Oleksandr Novikov
 
-<!--
-### In progress
-1. Transactions
-2. Docker
-3. Quakus
-  - https://github.com/Iskamele/quarkus-1-start
-3. CriteriaBuilder & CriteriaQuery
-4. Mockito
+Backend Engineer & AI Integration Developer · Brno, Czech Republic
 
-### TODO
-1. GraphQL
-  - https://www.youtube.com/watch?v=Y0lDGjwRYKw&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f
-  - https://graphql.org/learn
-2. Hasura
-3. DynamoDB
-4. MongoDB
-5. REST API
-6. JWT
-7. Keycloak
+I build backend services in Java — mostly Quarkus and Spring — and, lately, the parts
+of them that talk to LLMs. Outside of work I translate games into Ukrainian and keep
+the tooling of a Ukrainian fan-dubbing team running.
 
-### To read
-1. https://quarkus.io/guides/cdi
-2. https://quarkus.io/guides/cdi-reference
-3. https://quarkus.io/guides/smallrye-graphql
-4. https://quarkus.io/guides/cli-tooling
-5. https://quarkus.io/guides/getting-started#development-mode
-6. https://www.atlassian.com/ru/git/tutorials/saving-changes/git-stash
-7. https://www.jetbrains.com/help/idea/2024.1/undo-changes.html#revert-last-commit
-8. https://www.toptal.com/java/a-guide-to-everyday-mockito
--->
-<!--
-**Iskamele/iskamele** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Work
 
-Here are some ideas to get you started:
+**Now — Backend Engineer & AI Integration Developer** · AI / PropTech · since July 2026\
+Project details are under NDA. Backend development, integrations with external systems
+through authenticated API clients, and production LLM features together with the
+reliability work that keeps them up on live services.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Before — Backend Engineer** · PropTech / fintech · 2024–2026
+- Services connecting real-estate products to ČSOB's core banking systems.
+- Built an import of a public business registry from scratch: about 7 million records.
+- Replaced a legacy sync with real-time integrations driven by NATS events.
+- Worked on migrating services from Node.js to Quarkus.
+- Brought critical legacy modules to ~90% test coverage with Testcontainers.
+
+On the side: multi-model AI pipelines — image processing, and matching documents
+across incompatible formats with web-search enrichment.
+
+## Vocal Games
+
+Since January 2026 I'm in the core team of [Vocal Games](https://t.me/VocalGames),
+a Ukrainian fan-dubbing team — and its only engineer.
+- VGbot, the Telegram bot the whole task pipeline runs through.
+- Admin tooling instead of spreadsheets: casting, release readiness, reminders.
+- A glossary that fills itself from the EN/UA lines in project sheets.
+- OAuth2, error reports, systemd and CI/CD on a VPS.
+
+## Ukrainian translations
+
+A hobby: games I like, made playable in Ukrainian — the text, fonts that gained Ї, Є
+and Ґ, and in-game art redrawn where the text is part of the picture.
+
+<!-- ukrainify:start -->
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/Iskamele/Ukrainify-Behind-the-Frame-The-Finest-Scenery"><img src="assets/covers/Ukrainify-Behind-the-Frame-The-Finest-Scenery.jpg" alt="Behind the Frame: The Finest Scenery"></a>
+
+**[Behind the Frame: The Finest Scenery](https://github.com/Iskamele/Ukrainify-Behind-the-Frame-The-Finest-Scenery)**<br>
+Переклад 100% · версія 1.1<br>
+703 репліки · 85 зображень
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/Iskamele/Ukrainify-Dune-Spice-Wars"><img src="assets/covers/Ukrainify-Dune-Spice-Wars.jpg" alt="Dune: Spice Wars"></a>
+
+**[Dune: Spice Wars](https://github.com/Iskamele/Ukrainify-Dune-Spice-Wars)**<br>
+Переклад 51% · редактура 9% · у роботі<br>
+9 714 із 18 972 рядків
+</td>
+</tr>
+</table>
+<!-- ukrainify:end -->
+
+## Toolbox
+
+**Backend** — Java 17+, Quarkus, Spring Boot, GraphQL / Hasura, Hibernate / Panache, jOOQ, NATS, Testcontainers\
+**Data** — PostgreSQL, MySQL, MongoDB, DynamoDB\
+**Platform** — AWS, Docker, GitHub Actions\
+**AI** — LangChain4j, llama.cpp, Ollama, Whisper, Claude & OpenAI APIs, n8n\
+**Game tooling** — Python, UnityPy, Heaps / HashLink, CastleDB, fonts and texture atlases
+
+---
+
+[Telegram](https://t.me/iskamele) · [Email](mailto:iskamele@gmail.com) · [LinkedIn](https://www.linkedin.com/in/oleksandr-novikov/)\
+English · Ukrainian · Russian · Czech (basic)
