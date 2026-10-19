@@ -34,7 +34,7 @@ a Ukrainian fan-dubbing team — and its only engineer.
 
 ## Ukrainian translations
 
-A hobby: games I like, made playable in Ukrainian — the text, fonts that gained Ї, Є
+A hobby: made games playable in Ukrainian — the text, fonts that gained Ї, Є
 and Ґ, and in-game art redrawn where the text is part of the picture.
 
 <!-- ukrainify:start -->
