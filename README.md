@@ -51,7 +51,7 @@ and Ґ, and in-game art redrawn where the text is part of the picture.
 <a href="https://github.com/Iskamele/Ukrainify-Dune-Spice-Wars"><img src="assets/covers/Ukrainify-Dune-Spice-Wars.jpg" alt="Dune: Spice Wars"></a>
 
 **[Dune: Spice Wars](https://github.com/Iskamele/Ukrainify-Dune-Spice-Wars)**<br>
-Переклад 51% · редактура 9% · у роботі<br>
+Переклад 51% · редактура 51% · у роботі<br>
 9 714 із 18 972 рядків
 </td>
 </tr>
